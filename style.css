@@ -38,9 +38,19 @@ img { display: block; max-width: 100%; height: auto; }
 .sec-h > a { margin-left: auto; font-size: 14px; }
 
 /* Home intro */
-.intro { display: grid; gap: 36px var(--gap); padding-block: clamp(48px, 8vw, 136px) clamp(48px, 6vw, 96px); }
+.intro { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px var(--gap); padding-block: clamp(48px, 8vw, 136px) clamp(48px, 6vw, 96px); }
 .intro h1 { font-size: clamp(40px, 5vw, 72px); line-height: 1; letter-spacing: -0.045em; }
 .lede { max-width: 22em; margin-top: 16px; font-size: clamp(18px, 1.7vw, 24px); font-weight: 500; line-height: 1.45; letter-spacing: -0.025em; }
+/* Keyword ticker in the lede's one-line slot; hover pauses, reduced motion stops it on the first keywords */
+.ticker { overflow: hidden; white-space: nowrap; -webkit-mask-image: linear-gradient(90deg, transparent, #000 28px, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, transparent, #000 28px, #000 calc(100% - 28px), transparent); }
+.ticker .track { display: inline-block; animation: tick 100s linear infinite;  /* same letters per second at every font size */ }
+.ticker:hover .track { animation-play-state: paused; }
+.ticker i { margin: 0 0.55em; font-style: normal; color: #b8b8b8; }
+@keyframes tick { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .ticker { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+  .ticker .track { animation: none; }
+}
 .facts { display: grid; grid-template-columns: 2.6em minmax(0, 1fr); gap: 6px 14px; align-content: end; font-size: 14px; }
 .facts dt { color: var(--mute); }
 
