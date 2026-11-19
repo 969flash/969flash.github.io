@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Density and Closure · 변상훈</title>
+<meta name="description" content="강남구에서 2016년 개업한 22개 업종 7,647개 사업체를 3년간 추적해, 같은 업종의 밀집도가 폐업에 주는 영향을 업종별로 비교했다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Density and Closure · 변상훈">
+<meta property="og:description" content="강남구에서 2016년 개업한 22개 업종 7,647개 사업체를 3년간 추적해, 같은 업종의 밀집도가 폐업에 주는 영향을 업종별로 비교했다.">
+<meta property="og:url" content="https://969flash.github.io/projects/density-and-closure.html">
+<meta property="og:image" content="https://969flash.github.io/og/density-and-closure.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top wrap">
+<a class="me" href="../index.html">변상훈 <span lang="en">Byun Sanghoon</span></a>
+<nav aria-label="사이트"><a href="../index.html#work">작업</a><a href="../index.html#career">경력</a><a href="../index.html#cv">이력</a><a href="../Byun_Sanghoon_Portfolio.pdf">PDF</a><a href="https://github.com/969flash">GitHub</a><a href="mailto:bsh969flash@gmail.com">메일</a></nav>
+</header>
+<main>
+<article>
+<div class="ph wrap">
+<div class="ph-l">
+<header class="ph-t"><h1 lang="en">Density and Closure</h1>
+<p class="ph-ko">업종별 공간 밀집도와 폐업, 강남구 시계열 분석</p>
+<p class="ph-sub" lang="en">Industry-Specific Spatial Density and Business Closure, A Spatio-Temporal Analysis of Gangnam-gu, Seoul</p></header>
+<dl class="ph-meta"><div><dt>분야</dt><dd>연구/개발</dd></div><div><dt>기간</dt><dd>2025.04</dd></div><div><dt>소속</dt><dd>서울대 협동과정 도시설계학전공</dd></div><div><dt>형태</dt><dd>팀</dd></div><div><dt>역할</dt><dd>제2저자</dd></div><div><dt>대상지</dt><dd>서울 강남구, 2016년 개업 사업체 7,647곳 (22개 업종)</dd></div><div><dt>도구</dt><dd>Python, SciPy KDTree</dd></div><div><dt>성과</dt><dd>한국도시설계학회 2025 춘계학술대회 발표 (2025.04.19)</dd></div></dl>
+<p class="lede">같은 업종이 얼마나 몰려 있는지가 개업 후 3년 생존에 주는 영향을 업종마다 따로 따졌다.</p>
+</div>
+<div class="ph-r"><figure class="ph-hero item"><img src="../img/CL_01_NearestDistance-830.webp" srcset="../img/CL_01_NearestDistance-830.webp 830w" sizes="(min-width: 1000px) 66vw, 100vw" width="830" height="418" alt="같은 업종의 가장 가까운 사업체끼리 화살표로 이은 점 다이어그램" fetchpriority="high" decoding="async"><figcaption>A 최근접 거리. 사업체마다 같은 날 영업 중인 같은 업종의 가장 가까운 사업체까지 거리를 영업일로 평균한다.</figcaption></figure><div class="body"><p>2016년 강남구에서 개업한 22개 업종 7,647개 사업체를 LOCALDATA로 3년간 추적했다. 영업한 날마다 같은 업종의 최근접 거리와 인접 사업체 수를 재고, 업종별로 t-검정과 로지스틱 회귀를 했다.</p><p>3년 안 폐업률은 출판사 3.4%에서 즉석판매제조가공업 88.8%까지 벌어졌다. 즉석판매제조가공업과 휴게음식점은 밀집할수록 불리했고, 유통전문판매업은 오히려 생존 확률이 높았다.</p></div></div>
+</div>
+<section class="sec wrap"><h2 lang="en">Competition, Day by Day</h2><div class="items items--2"><figure class="item"><img src="../img/CL_02_AdjacentCount-830.webp" srcset="../img/CL_02_AdjacentCount-830.webp 830w" sizes="(min-width: 640px) 50vw, 100vw" width="830" height="418" alt="Density and Closure B  인접 사업체 수" loading="lazy" decoding="async"><figcaption><b>B  인접 사업체 수</b>업종 평균 최근접 거리 안에 있는 같은 업종 사업체 수.</figcaption></figure><figure class="item"><img src="../img/CL_03_Formula-489.webp" srcset="../img/CL_03_Formula-489.webp 489w" sizes="(min-width: 640px) 50vw, 100vw" width="489" height="175" alt="Density and Closure NND" loading="lazy" decoding="async"><figcaption><b>NND</b>사업체의 일평균 최근접 거리 식.</figcaption></figure></div></section>
+</article>
+<nav class="next wrap" aria-labelledby="next-h">
+<div class="sec-h"><h2 id="next-h">다른 작업</h2><a href="../index.html#work">전체 작업</a></div>
+<div class="tiles tiles--2"><article class="tile" data-kind="des"><div class="media"><img src="../img/uf_hero-600.webp" srcset="../img/uf_hero-600.webp 600w, ../img/uf_hero-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="600" alt="Urban Floor 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><div class="a"><h3 lang="en"><a class="stretch" href="../projects/urban-floor.html">Urban Floor</a></h3><span class="y num">2025</span></div><p class="ko">영등포 철도 지하화 부지 다층 도시설계</p><p class="m">디자인 · 서울대 IPUD 스튜디오</p></div></article><article class="tile" data-kind="des"><div class="media"><img src="../img/OP_01_Hero-600.webp" srcset="../img/OP_01_Hero-600.webp 600w, ../img/OP_01_Hero-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="600" alt="Opacity 50 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><div class="a"><h3 lang="en"><a class="stretch" href="../projects/opacity-50.html">Opacity 50</a></h3><span class="y num">2025</span></div><p class="ko">파비아 Almo Collegio Borromeo 정원 전시 공간</p><p class="m">디자인 · YAC Garden of Knowledge</p></div></article></div>
+</nav>
+</main>
+<footer class="foot wrap"><a href="mailto:bsh969flash@gmail.com">bsh969flash@gmail.com</a><a href="https://github.com/969flash">github.com/969flash</a><a href="../Byun_Sanghoon_Portfolio.pdf">포트폴리오 PDF</a><span>2026.11 수정</span></footer>
+</body>
+</html>

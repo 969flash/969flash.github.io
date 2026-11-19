@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food Detector · 변상훈</title>
+<meta name="description" content="공공데이터, 사장님 인증, 사용자 리뷰를 합쳐 서울 식당 151,592곳에 100점 만점 위생 점수를 매기고 4단계 치즈 등급으로 보여주는 웹앱.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Food Detector · 변상훈">
+<meta property="og:description" content="공공데이터, 사장님 인증, 사용자 리뷰를 합쳐 서울 식당 151,592곳에 100점 만점 위생 점수를 매기고 4단계 치즈 등급으로 보여주는 웹앱.">
+<meta property="og:url" content="https://969flash.github.io/projects/food-detector.html">
+<meta property="og:image" content="https://969flash.github.io/og/food-detector.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top wrap">
+<a class="me" href="../index.html">변상훈 <span lang="en">Byun Sanghoon</span></a>
+<nav aria-label="사이트"><a href="../index.html#work">작업</a><a href="../index.html#career">경력</a><a href="../index.html#cv">이력</a><a href="../Byun_Sanghoon_Portfolio.pdf">PDF</a><a href="https://github.com/969flash">GitHub</a><a href="mailto:bsh969flash@gmail.com">메일</a></nav>
+</header>
+<main>
+<article>
+<div class="ph wrap">
+<div class="ph-l">
+<header class="ph-t"><h1 lang="en">Food Detector</h1>
+<p class="ph-ko">식탐정, 식당 위생 점수 웹앱</p>
+<p class="ph-sub" lang="en">Restaurant Hygiene Score Service, Cheese Grades from Public Data</p></header>
+<dl class="ph-meta"><div><dt>분야</dt><dd>연구/개발</dd></div><div><dt>기간</dt><dd>2026.05</dd></div><div><dt>소속</dt><dd>2026 서울시 빅데이터 활용 경진대회, 창업 부문 (제품·서비스 개발)</dd></div><div><dt>형태</dt><dd>팀</dd></div><div><dt>대상지</dt><dd>서울 영업 중인 일반·휴게음식점 151,592곳</dd></div><div><dt>도구</dt><dd>TypeScript, React Native, Expo, Supabase, Node.js, Kakao Maps SDK, Claude API, Vercel</dd></div></dl>
+<p class="lede">공공데이터로 서울 식당 151,592곳에 위생 점수를 매기고 네 단계 치즈 등급으로 보여 주는 웹앱이다.</p>
+</div>
+<div class="ph-r"><figure class="ph-hero item"><img src="../img/FD_01_CheeseGrade-1116.webp" srcset="../img/FD_01_CheeseGrade-1116.webp 1116w" sizes="(min-width: 1000px) 66vw, 100vw" width="1116" height="967" alt="검색 결과, 식당 보고서, 지도에 치즈 등급이 표시된 앱 화면 세 장" fetchpriority="high" decoding="async"></figure><div class="body"><p>점수는 공공데이터 70점, 사장님 청소 기록 15점, 사용자 위생 별점 15점을 더한 100점 만점이다. AI가 행정처분 원문을 읽어 위반 유형을 나눈다.</p><p>5개 기관 데이터셋 37종과 카카오 지도 SDK를 합쳐 식당 목록을 만들었다. 등급 분포는 골드 2.6%, 실버 24.1%, 브론즈 73.3%, 트랩 23곳이다.</p></div></div>
+</div>
+<section class="sec wrap"><h2 lang="en">Trap Cheese</h2><div class="items items--1 items--narrow"><figure class="item"><img src="../img/FD_02_TrapCheese-790.webp" srcset="../img/FD_02_TrapCheese-790.webp 790w" sizes="100vw" width="790" height="967" alt="Food Detector Trap Cheese" loading="lazy" decoding="async"><figcaption>위생 위반으로 행정처분을 받은 식당은 트랩 치즈가 되고 처분 사유 원문이 보인다.</figcaption></figure></div></section><section class="sec wrap"><h2 lang="en">Reviews and Owners</h2><div class="items items--2"><figure class="item"><img src="../img/FD_03_UserReviews-1148.webp" srcset="../img/FD_03_UserReviews-1148.webp 1148w" sizes="(min-width: 640px) 50vw, 100vw" width="1148" height="966" alt="Food Detector User Reviews and Likes" loading="lazy" decoding="async"><figcaption><b>User Reviews and Likes</b>테이블·음식·직원·화장실 네 항목의 위생 별점.</figcaption></figure><figure class="item"><img src="../img/fd_04_owner_verification-930.webp" srcset="../img/fd_04_owner_verification-930.webp 930w" sizes="(min-width: 640px) 50vw, 100vw" width="930" height="967" alt="Food Detector Owner Verification" loading="lazy" decoding="async"><figcaption><b>Owner Verification</b>사업자 인증을 거친 사장님의 청소·위생 기록이 점수에 더해진다.</figcaption></figure></div></section><section class="sec wrap"><h2 lang="en">Real-Time Food Poisoning Alert</h2><div class="items items--1"><figure class="item"><img src="../img/FD_05_FoodPoisoningAlert-1146.webp" srcset="../img/FD_05_FoodPoisoningAlert-1146.webp 1146w" sizes="100vw" width="1146" height="967" alt="Food Detector Real-Time Food Poisoning Alert" loading="lazy" decoding="async"><figcaption>기온·습도·대기질·식약처 예측으로 매긴 자치구별 식중독 위험 5단계.</figcaption></figure></div></section><section class="sec wrap"><h2 lang="en">Development Process</h2><div class="items items--1"><figure class="item"><img src="../img/FD_06_Timeline-1200.webp" srcset="../img/FD_06_Timeline-1200.webp 1200w, ../img/FD_06_Timeline-1701.webp 1701w" sizes="100vw" width="1701" height="159" alt="Food Detector Development Process" loading="lazy" decoding="async"><figcaption>조사부터 배포까지 6단계 개발 일정.</figcaption></figure></div></section>
+</article>
+<nav class="next wrap" aria-labelledby="next-h">
+<div class="sec-h"><h2 id="next-h">다른 작업</h2><a href="../index.html#work">전체 작업</a></div>
+<div class="tiles tiles--2"><article class="tile" data-kind="rnd"><div class="media"><img src="../img/gorani_cover-tile-600.webp" srcset="../img/gorani_cover-tile-600.webp 600w, ../img/gorani_cover-tile-1156.webp 1156w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1156" height="866" alt="Gorani 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><div class="a"><h3 lang="en"><a class="stretch" href="../projects/gorani.html">Gorani</a></h3><span class="y num">2025–</span></div><p class="ko">대상지 3D 모델링·분석 무료 플러그인</p><p class="m">연구/개발 · 개인 작업</p></div></article><article class="tile" data-kind="rnd"><div class="media"><img src="../img/T01_02_hero_envelope_axon_notext-600.webp" srcset="../img/T01_02_hero_envelope_axon_notext-600.webp 600w, ../img/T01_02_hero_envelope_axon_notext-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="675" alt="Buildable Envelope Automation 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><div class="a"><h3 lang="en"><a class="stretch" href="../projects/buildable-envelope.html">Buildable Envelope Automation</a></h3><span class="y num">2025–26</span></div><p class="ko">LLM 기반 건축가능영역 설계 자동화</p><p class="m">연구/개발 · 서울대 석사논문, 「도시설계」 27(3)</p></div></article></div>
+</nav>
+</main>
+<footer class="foot wrap"><a href="mailto:bsh969flash@gmail.com">bsh969flash@gmail.com</a><a href="https://github.com/969flash">github.com/969flash</a><a href="../Byun_Sanghoon_Portfolio.pdf">포트폴리오 PDF</a><span>2026.11 수정</span></footer>
+</body>
+</html>

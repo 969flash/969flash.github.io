@@ -14,8 +14,9 @@
 <link rel="icon" href="../favicon.ico" sizes="32x32">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400&display=swap">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -25,22 +26,23 @@
 </header>
 <main>
 <article>
-<header class="ph wrap">
-<h1 lang="en">Arterial Road Reconstruction</h1>
+<div class="ph wrap">
+<div class="ph-l">
+<header class="ph-t"><h1 lang="en">Arterial Road Reconstruction</h1>
 <p class="ph-ko">AI 기반 종이지도 디지털화와 간선도로 시계열 복원</p>
-<p class="ph-sub" lang="en">AI-Based Temporal Reconstruction of Arterial Roads via Map Digitization</p>
-</header>
-<div class="wrap"><dl class="ph-meta"><div><dt>분야</dt><dd>연구/개발</dd></div><div><dt>기간</dt><dd>2025.09–2026.04</dd></div><div><dt>형태</dt><dd>팀, 제2저자</dd></div><div><dt>역할</dt><dd>AI·GIS 변환 파이프라인 구축</dd></div><div><dt>대상지</dt><dd>7대 광역시 간선도로, 1970–2004년</dd></div><div><dt>도구</dt><dd>Gemini API, GeoTIFF, SHP</dd></div><div><dt>성과</dt><dd>CAADRIA 2026 학술발표</dd></div></dl></div>
-
-<section class="ph-intro wrap"><p class="lede">옛 종이지도에서 간선도로를 AI로 뽑아 GIS 데이터로 바꾸고, 도로 구간마다 건설 시기를 추정한다.</p>
-<div class="body"><p>전국 대도시 도로의 건설 시기를 재려면 과거 지도가 필요하지만, 1970~2000년대 공간정보는 종이지도로만 남아 있어 도로망이 언제 넓어졌는지 분석할 수 없었다. 수작업 도면화로는 전국 규모에 적용할 수 없다.</p><p>Gemini API로 종이지도에서 간선도로만 분리해 추출하고, 같은 조건에서 기존 색상 기반 방식(K-means + RGB)과 성능을 비교했다. AI가 낸 이미지는 좌표계를 넣은 GeoTIFF로 바꾼 뒤 기하 연산으로 GIS 폴리곤으로 전환해 현행 도로명주소 간선도로 SHP와 좌표를 맞췄다. 도로 구간마다 연도별 지도와 겹치는지 판별해 건설 시기를 추정하고 연도별 도로 지도를 만들었다.</p><p>AI 추출의 mean IoU는 0.89로 색상 기반 방식의 0.71보다 높았고(p &lt; 0.001), IoU 0.80 이상인 고정밀 검출 비율은 82.9%로 색상 기반 방식의 51.4%를 웃돌았다. 이를 바탕으로 7대 광역시의 1970~2004년 간선도로 시계열 데이터셋을 만들고 구간별 도로 연령을 산출했다.</p></div></section>
+<p class="ph-sub" lang="en">AI-Based Temporal Reconstruction of Arterial Roads via Map Digitization</p></header>
+<dl class="ph-meta"><div><dt>분야</dt><dd>연구/개발</dd></div><div><dt>기간</dt><dd>2025.09–2026.04</dd></div><div><dt>형태</dt><dd>팀, 제2저자</dd></div><div><dt>역할</dt><dd>AI·GIS 변환 파이프라인 구축</dd></div><div><dt>대상지</dt><dd>7대 광역시 간선도로, 1970–2004년</dd></div><div><dt>도구</dt><dd>Gemini API, GeoTIFF, SHP</dd></div><div><dt>성과</dt><dd>CAADRIA 2026 학술발표</dd></div></dl>
+<p class="lede">옛 종이지도에서 간선도로를 AI로 뽑아 GIS 데이터로 바꾸고, 도로 구간마다 건설 시기를 추정한다.</p>
+</div>
+<div class="ph-r"><div class="body"><p>1970~2000년대 공간정보는 종이지도로만 남아 있어, 대도시 도로망이 언제 넓어졌는지 분석할 수 없었다. 수작업 도면화로는 전국 규모를 다룰 수 없다.</p><p>Gemini API로 종이지도에서 간선도로만 추출하고, 같은 조건에서 기존 색상 기반 방식(K-means + RGB)과 성능을 비교했다. 추출한 이미지는 좌표계를 넣은 GeoTIFF로 바꾼 뒤 기하 연산으로 GIS 폴리곤을 만들고, 현행 도로명주소 간선도로 SHP와 좌표를 맞췄다. 건설 시기는 각 구간이 연도별 지도와 겹치는지로 추정했고, 이를 모아 연도별 도로 지도를 만들었다.</p><p>AI 추출의 mean IoU는 0.89로 색상 기반 방식(0.71)보다 높았고(p &lt; 0.001), IoU 0.80 이상인 고정밀 검출 비율도 82.9%로 색상 기반 방식(51.4%)을 웃돌았다. 7대 광역시의 1970~2004년 간선도로 시계열 데이터셋을 만들고 구간별 도로 연령을 산출했다.</p></div></div>
+</div>
 
 </article>
 <nav class="next wrap" aria-labelledby="next-h">
 <div class="sec-h"><h2 id="next-h">다른 작업</h2><a href="../index.html#work">전체 작업</a></div>
-<div class="tiles tiles--2"><article class="tile" data-kind="rnd"><div class="media"><img src="../img/PL01_02_seoul_blocks_ple_notext-600.webp" srcset="../img/PL01_02_seoul_blocks_ple_notext-600.webp 600w, ../img/PL01_02_seoul_blocks_ple_notext-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="675" alt="PLE Index 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><h3 lang="en"><a class="stretch" href="../projects/ple-index.html">PLE Index</a></h3><span class="y num">2025–26</span><p class="ko">필지 구획 효율성 자동 평가</p><p class="m">연구/개발 · CAADRIA 2026</p></div></article><article class="tile" data-kind="des"><div class="media"><img src="../img/NC_01_Hero-600.webp" srcset="../img/NC_01_Hero-600.webp 600w, ../img/NC_01_Hero-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="407" alt="Network Campus City 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><h3 lang="en"><a class="stretch" href="../projects/network-campus-city.html">Network Campus City</a></h3><span class="y num">2025</span><p class="ko">몽골 훈누시 캠퍼스 시티 도시설계</p><p class="m">설계 · 서울대 IPUD 스튜디오</p></div></article></div>
+<div class="tiles tiles--2"><article class="tile" data-kind="rnd"><div class="media"><img src="../img/PL01_02_seoul_blocks_ple_notext-600.webp" srcset="../img/PL01_02_seoul_blocks_ple_notext-600.webp 600w, ../img/PL01_02_seoul_blocks_ple_notext-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="675" alt="PLE Index 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><div class="a"><h3 lang="en"><a class="stretch" href="../projects/ple-index.html">PLE Index</a></h3><span class="y num">2025–26</span></div><p class="ko">필지 구획 효율성 자동 평가</p><p class="m">연구/개발 · CAADRIA 2026</p></div></article><article class="tile" data-kind="des"><div class="media"><img src="../img/NC_01_Hero-600.webp" srcset="../img/NC_01_Hero-600.webp 600w, ../img/NC_01_Hero-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="407" alt="Network Campus City 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><div class="a"><h3 lang="en"><a class="stretch" href="../projects/network-campus-city.html">Network Campus City</a></h3><span class="y num">2025</span></div><p class="ko">몽골 훈누시 캠퍼스 시티 도시설계</p><p class="m">디자인 · 서울대 IPUD 스튜디오</p></div></article></div>
 </nav>
 </main>
-<footer class="foot wrap"><a href="mailto:bsh969flash@gmail.com">bsh969flash@gmail.com</a><a href="https://github.com/969flash">github.com/969flash</a><span>2026.11 수정</span></footer>
+<footer class="foot wrap"><a href="mailto:bsh969flash@gmail.com">bsh969flash@gmail.com</a><a href="https://github.com/969flash">github.com/969flash</a><a href="../Byun_Sanghoon_Portfolio.pdf">포트폴리오 PDF</a><span>2026.11 수정</span></footer>
 </body>
 </html>

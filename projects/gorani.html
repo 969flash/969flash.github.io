@@ -14,8 +14,9 @@
 <link rel="icon" href="../favicon.ico" sizes="32x32">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400&display=swap">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -25,22 +26,23 @@
 </header>
 <main>
 <article>
-<header class="ph wrap">
-<h1 lang="en">Gorani</h1>
+<div class="ph wrap">
+<div class="ph-l">
+<header class="ph-t"><h1 lang="en">Gorani</h1>
 <p class="ph-ko">대상지 3D 모델링·분석 무료 플러그인</p>
-<p class="ph-sub" lang="en">Site context for urban design</p>
-</header>
-<div class="wrap"><dl class="ph-meta"><div><dt>분야</dt><dd>연구/개발</dd></div><div><dt>기간</dt><dd>2025–2026</dd></div><div><dt>형태</dt><dd>개인 작업</dd></div><div><dt>플랫폼</dt><dd>Rhino 7/8, SketchUp, Blender, AutoCAD</dd></div><div><dt>스택</dt><dd>Python, RhinoCommon, Eto WebView, Leaflet, SQLite</dd></div><div><dt>데이터</dt><dd>국토교통부·V-World 공공데이터 (오프라인 팩)</dd></div><div><dt>링크</dt><dd><a href="https://gorani.site/">gorani.site</a> · <a href="https://github.com/969flash/gorani-plugin">GitHub</a></dd></div></dl></div>
-<figure class="ph-hero wrap item"><img src="../img/gorani_cover-1200.webp" srcset="../img/gorani_cover-1200.webp 1200w, ../img/gorani_cover-1540.webp 1540w" sizes="100vw" width="1540" height="866" alt="Gorani로 만든 대상지 3D 모델" fetchpriority="high" decoding="async"></figure>
-<section class="ph-intro wrap"><p class="lede">대상지를 고르면 도면이 나온다.</p>
-<div class="body"><p>지도에서 대상지를 고르면 3D 지형·건물·도로·수계 모델과 2D 현황도·분석도 22종을 한 번에 만든다. 공공데이터를 로컬 SQLite 팩으로 묶어 서버 없이 돈다.</p><p>베이스맵은 Illustrator 레이어와 DWG로, 조서는 CSV로 내보내고 출처와 기준일을 도면에 자동 표기한다. 사이트는 한국어, 영어, 일본어, 중국어, 스페인어로 운영한다.</p></div></section>
+<p class="ph-sub" lang="en">Site context for urban design</p></header>
+<dl class="ph-meta"><div><dt>분야</dt><dd>연구/개발</dd></div><div><dt>기간</dt><dd>2025–2026</dd></div><div><dt>형태</dt><dd>개인 작업</dd></div><div><dt>플랫폼</dt><dd>Rhino 7/8, SketchUp, Blender, AutoCAD</dd></div><div><dt>스택</dt><dd>Python, RhinoCommon, Eto WebView, Leaflet, SQLite</dd></div><div><dt>데이터</dt><dd>국토교통부·V-World 공공데이터 (오프라인 팩)</dd></div><div><dt>링크</dt><dd><a href="https://gorani.site/">gorani.site</a> · <a href="https://github.com/969flash/gorani-plugin">GitHub</a></dd></div></dl>
+<p class="lede">대상지를 고르면 도면이 나온다.</p>
+</div>
+<div class="ph-r"><figure class="ph-hero item"><img src="../img/gorani_cover-1200.webp" srcset="../img/gorani_cover-1200.webp 1200w, ../img/gorani_cover-1540.webp 1540w" sizes="(min-width: 1000px) 66vw, 100vw" width="1540" height="866" alt="Gorani로 만든 대상지 3D 모델" fetchpriority="high" decoding="async"></figure><div class="body"><p>3D 지형·건물·도로·수계 모델과 2D 현황도·분석도 22종을 한 번에 만든다. 공공데이터를 로컬 SQLite 팩으로 묶어 서버 없이 돈다.</p><p>베이스맵은 Illustrator 레이어와 DWG로, 조서는 CSV로 내보낸다. 출처와 기준일은 도면에 자동으로 적힌다. 사이트는 한국어, 영어, 일본어, 중국어, 스페인어로 운영한다.</p></div></div>
+</div>
 <section class="sec wrap"><h2 lang="en">Workflow</h2><div class="items items--3"><figure class="item"><img src="../img/gorani_step-site-640.webp" srcset="../img/gorani_step-site-640.webp 640w" sizes="(min-width: 1000px) 33vw, 100vw" width="640" height="813" alt="Gorani 1  대상지 선택" loading="lazy" decoding="async"><figcaption><b>1  대상지 선택</b>지도에서 필지·영역·점으로 대상지와 범위를 고른다.</figcaption></figure><figure class="item"><img src="../img/gorani_step-3d-640.webp" srcset="../img/gorani_step-3d-640.webp 640w" sizes="(min-width: 1000px) 33vw, 100vw" width="640" height="813" alt="Gorani 2  3D 모델" loading="lazy" decoding="async"><figcaption><b>2  3D 모델</b>지형·건물·도로·수계·용도지역 레이어가 Rhino 문서에 생긴다.</figcaption></figure><figure class="item"><img src="../img/gorani_step-2d-640.webp" srcset="../img/gorani_step-2d-640.webp 640w" sizes="(min-width: 1000px) 33vw, 100vw" width="640" height="813" alt="Gorani 3  2D 자료" loading="lazy" decoding="async"><figcaption><b>3  2D 자료</b>베이스맵 .ai와 DWG, 현황도·분석도 22종, 조서 CSV.</figcaption></figure></div></section><section class="sec wrap"><h2 lang="en">Interface</h2><div class="items items--2"><figure class="item"><img src="../img/gorani_use-2-3d-1200.webp" srcset="../img/gorani_use-2-3d-1200.webp 1200w, ../img/gorani_use-2-3d-2130.webp 2130w" sizes="(min-width: 640px) 50vw, 100vw" width="2130" height="1412" alt="Gorani 3D 모델 설정" loading="lazy" decoding="async"><figcaption><b>3D 모델 설정</b>범위와 지형 표현을 고르고 3D 모델을 만든다.</figcaption></figure><figure class="item"><img src="../img/gorani_use-3-2d-1200.webp" srcset="../img/gorani_use-3-2d-1200.webp 1200w, ../img/gorani_use-3-2d-2130.webp 2130w" sizes="(min-width: 640px) 50vw, 100vw" width="2130" height="1412" alt="Gorani 2D 자료 설정" loading="lazy" decoding="async"><figcaption><b>2D 자료 설정</b>베이스맵, 다이어그램, 조서 가운데 필요한 것을 고른다.</figcaption></figure></div></section><section class="sec wrap"><h2 lang="en">In Rhino</h2><div class="items items--1"><figure class="item"><img src="../img/gorani_detail-3d-1200.webp" srcset="../img/gorani_detail-3d-1200.webp 1200w, ../img/gorani_detail-3d-2400.webp 2400w" sizes="100vw" width="2400" height="1223" alt="Gorani In Rhino" loading="lazy" decoding="async"><figcaption>레이어별로 나뉜 대상지 모델이 Rhino 문서에 들어온다.</figcaption></figure></div></section>
 </article>
 <nav class="next wrap" aria-labelledby="next-h">
 <div class="sec-h"><h2 id="next-h">다른 작업</h2><a href="../index.html#work">전체 작업</a></div>
-<div class="tiles tiles--2"><article class="tile" data-kind="des"><div class="media"><img src="../img/FR_hero_night-600.webp" srcset="../img/FR_hero_night-600.webp 600w, ../img/FR_hero_night-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="630" alt="FRAME 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><h3 lang="en"><a class="stretch" href="../projects/frame.html">FRAME</a></h3><span class="y num">2020</span><p class="ko">을지로 전자상가 호텔 리모델링</p><p class="m">설계 · 홍익대 실내건축설계</p></div></article><article class="tile" data-kind="rnd"><div class="media"><img src="../img/T01_02_hero_envelope_axon_notext-600.webp" srcset="../img/T01_02_hero_envelope_axon_notext-600.webp 600w, ../img/T01_02_hero_envelope_axon_notext-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="675" alt="Buildable Envelope Automation 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><h3 lang="en"><a class="stretch" href="../projects/buildable-envelope.html">Buildable Envelope Automation</a></h3><span class="y num">2025–26</span><p class="ko">LLM 기반 건축가능영역 설계 자동화</p><p class="m">연구/개발 · 서울대 석사논문, 「도시설계」 27(3)</p></div></article></div>
+<div class="tiles tiles--2"><article class="tile" data-kind="des"><div class="media"><img src="../img/FR_hero_night-600.webp" srcset="../img/FR_hero_night-600.webp 600w, ../img/FR_hero_night-1200.webp 1200w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1200" height="630" alt="FRAME 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><div class="a"><h3 lang="en"><a class="stretch" href="../projects/frame.html">FRAME</a></h3><span class="y num">2020</span></div><p class="ko">을지로 전자상가 호텔 리모델링</p><p class="m">디자인 · 홍익대 실내건축설계</p></div></article><article class="tile" data-kind="rnd"><div class="media"><img src="../img/FD_01_CheeseGrade-600.webp" srcset="../img/FD_01_CheeseGrade-600.webp 600w, ../img/FD_01_CheeseGrade-1116.webp 1116w" sizes="(min-width: 1000px) 31vw, (min-width: 640px) 48vw, 100vw" width="1116" height="967" alt="Food Detector 대표 이미지" loading="lazy" decoding="async"></div><div class="cap"><div class="a"><h3 lang="en"><a class="stretch" href="../projects/food-detector.html">Food Detector</a></h3><span class="y num">2026</span></div><p class="ko">식탐정, 식당 위생 점수 웹앱</p><p class="m">연구/개발 · 2026 서울시 빅데이터 활용 경진대회</p></div></article></div>
 </nav>
 </main>
-<footer class="foot wrap"><a href="mailto:bsh969flash@gmail.com">bsh969flash@gmail.com</a><a href="https://github.com/969flash">github.com/969flash</a><span>2026.11 수정</span></footer>
+<footer class="foot wrap"><a href="mailto:bsh969flash@gmail.com">bsh969flash@gmail.com</a><a href="https://github.com/969flash">github.com/969flash</a><a href="../Byun_Sanghoon_Portfolio.pdf">포트폴리오 PDF</a><span>2026.11 수정</span></footer>
 </body>
 </html>
